@@ -82,6 +82,11 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        R.id.mainMenuFavoriteTodos -> {
+          openFavoriteTodoActivity()
+          true
+        }
+
         R.id.mainMenuLogout -> {
           viewModel.logout()
           openLoginActivity()
